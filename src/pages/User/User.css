@@ -1,0 +1,159 @@
+.User{
+    flex: 4;
+    padding: 1.4rem;
+}
+
+.UserTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.UserTitle{
+    font-size: 1.17rem;
+    font-weight: 600;
+}
+
+.UserAddButton{
+    width: 6rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(85, 200, 116);
+    padding: 0.7rem 0.5rem;
+    cursor: pointer;
+    color: #f9f9f9;
+    font-size: 1rem;
+}
+
+.UserContainer{
+    display: flex;
+}
+
+.UserShow{
+    margin-top: 1.4rem;
+    flex:1;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    padding: 1.4rem;
+}
+
+.UserUpdate{
+    margin-top: 1.4rem;
+    flex:1;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    padding: 1.4rem;
+}
+
+.UserShowTop{
+    display: flex;
+    align-items: center;
+
+}
+
+.UserShowImg{
+    width:2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.UserShowTopTitle{
+    display: flex;
+    flex-direction: column;
+    margin-left:1.4rem;
+}
+
+.UserShowUserName{
+    font-weight: 600;
+}
+
+.UserShowUserTitle{
+    font-weight: 300;
+}
+
+.UserShowBotton{
+    margin-top: 1.4rem;
+}
+
+.UserShowInfoContainer{
+    display: flex;
+    align-items: center;
+    margin: 1.4rem 0;
+    color: #444;
+}
+
+.UserShowTitle{
+    font-size: 0.9rem;
+    color: rgb(171, 171, 171);
+    font-weight: 600;
+}
+.UserShowIcon{
+    font-size: 1rem !important;
+}
+.USerShowInfoTitle{
+    margin-left: 0.8rem;
+}
+.UserUpdateImg{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+
+.UserUpdateForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.UserUpdateTitle{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.UserUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top:0.9rem ;
+}
+
+.UserUpdateItem>label{
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+   
+}
+.UserUpdateItem>input{
+    border: none;
+    width: 15rem;
+    height: 1.8rem;
+    border-bottom: 1px solid gray;
+}
+
+.UserUpdateRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.UseerUpdateUpload{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.UploadIcon{
+    cursor: pointer;
+}
+
+.UserUpdateButton{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(78, 78, 147);
+    color: #f9f9f9;
+}
