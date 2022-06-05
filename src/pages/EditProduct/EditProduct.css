@@ -1,0 +1,147 @@
+.EditProduct{
+    flex: 4;
+    padding: 1.4rem;
+}
+
+.productTitleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productAddButton{
+    width: 5rem;
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.productTop{
+    display: flex;
+}
+
+.productTopLeft{
+    flex:1;
+}
+.productTopRight{
+    flex:1;
+    margin: 1.4rem;
+    padding: 1.4rem;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+}
+
+.productInfoImg{
+    width: 7rem;
+    height: 7rem;
+    padding: 0.7rem;
+    border: 1px solid lightblue;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1.4rem;
+}
+
+.productInfoTop{
+    display: flex;
+    align-items: center;
+}
+
+.ProductName{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.productInfoBottom{
+    margin-top: 0.9rem;
+}
+
+.productInfoItem{
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+.productInfokey{
+    font-size: 1rem;
+    font-weight:900 ;
+}
+
+.productInfoValue{
+    font-weight: 300;
+}
+
+
+.productBottom{
+    flex:1;
+    margin: 1.4rem;
+    padding: 1.4rem;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+}
+
+.productForm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProductLeftForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.ProductLeftForm label{
+   margin-bottom: 0.9rem;
+   color: gray;
+}
+
+.ProductLeftForm input{
+    margin-bottom: 0.9rem;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.ProductLeftForm select{
+    margin-bottom: 0.9rem;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.ProductRightForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productUpload{
+    display: flex;
+    align-items: center;
+}
+
+.productUploadImage{
+    width: 7rem;
+    height: 7rem;
+    border: none;
+    border-radius: 0.9rem;
+    object-fit: cover;
+}
+
+.ProductButton{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}

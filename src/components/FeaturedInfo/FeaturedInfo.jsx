@@ -8,10 +8,10 @@ const FeaturedInfo = () => {
         <div className="featuredItem">
             <span className="featureTitle">Revenue</span>
                 <div className="featuredMoneyContainer">
-                    <span className="featuredMoney">$ 2,455</span>
-                    <span className="featuredMoneyRate">-11.4 <ArrowDropDown className='featureIcon negative'/></span>
+                    <span className="featuredMoney">$ 3,455</span>
+                    <span className="featuredMoneyRate">+11.4 <ArrowDropUp className='featureIcon'/></span>
                 </div>
-                <span className="featureSub negative">Compared to last month</span>
+                <span className="featureSub">Compared to last month</span>
 
         </div>
 
@@ -19,19 +19,19 @@ const FeaturedInfo = () => {
             <span className="featureTitle">Sales</span>
                 <div className="featuredMoneyContainer">
                     <span className="featuredMoney">$ 9,415</span>
-                    <span className="featuredMoneyRate">-4.4 <ArrowDropDown className='featureIcon negative'/></span>
+                    <span className="featuredMoneyRate">+4.4 <ArrowDropUp className='featureIcon'/></span>
                 </div>
-                <span className="featureSub negative">Compared to last month</span>
+                <span className="featureSub">Compared to last month</span>
 
         </div>
 
         <div className="featuredItem">
             <span className="featureTitle">Cost</span>
                 <div className="featuredMoneyContainer">
-                    <span className="featuredMoney">$ 3,415</span>
-                    <span className="featuredMoneyRate">+2.4<ArrowDropUp className='featureIcon'/></span>
+                    <span className="featuredMoney">$ 1,415</span>
+                    <span className="featuredMoneyRate">-2.4<ArrowDropDown className='featureIcon negative'/></span>
                 </div>
-                <span className="featureSub">Compared to last month</span>
+                <span className="featureSub negative">Compared to last month</span>
 
         </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
+import { Link } from 'react-router-dom';
 import {LineStyle, Analytics, TrendingUp, AccountCircle, Category, Assessment, Email, Feedback, Chat, WorkOutline, Report} from '@mui/icons-material';
 
 const Sidebar = () => {
@@ -9,10 +10,12 @@ const Sidebar = () => {
             <div className="sidebarMenu">
                 <div className="sidebarTitle">Dashboard</div>
                 <ul className="sidebarlist">
+                    <Link to='/' className='Link'> 
                     <li className="listitem active">
                         <LineStyle className='sidebarIcon'/>
                         Home
                     </li>
+                    </Link>
                     <li className="listitem">
                         <Analytics className='sidebarIcon'/>
                         Analytics
@@ -29,14 +32,18 @@ const Sidebar = () => {
             <div className="sidebarMenu">
                 <div className="sidebarTitle">Quick Menu</div>
                 <ul className="sidebarlist">
+                    <Link to='/user'  className='Link'>
                     <li className="listitem">
                         <AccountCircle className='sidebarIcon'/>
                         Users
                     </li>
+                    </Link>
+                    <Link to='/products'  className='Link'>
                     <li className="listitem">
                         <Category className='sidebarIcon'/>
                         Products
                     </li>
+                    </Link>
                     <li className="listitem">
                         <TrendingUp className='sidebarIcon'/>
                         Transactions

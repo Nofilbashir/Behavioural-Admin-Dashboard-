@@ -15,14 +15,12 @@ const User = () => {
   const item=UserRows.find((item)=>{
     return item.id === id
   })
-  console.log(item)
   return (
     <div className='User'>
       <div className="UserTitleContainer">
         <span className='UserTitle'>Edit User</span>
         <Link to='/newUser'>
         <button className="UserAddButton">Create</button>
-        {console.log(item)}
         </Link>
       </div>
       <div className="UserContainer">

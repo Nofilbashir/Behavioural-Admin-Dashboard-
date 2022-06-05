@@ -1,15 +1,14 @@
 import React from 'react'
 import './Linechart.css'
-import { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 
 
-const Linechart = ({data, title, grid, dataKey1, dataKey2} ) => {
+const Linechart = ({data, title, grid, dataKey1, dataKey2, ratio} ) => {
   return (
     <div className='chart'>
         <span className='ChartsTitle'>{title}</span>
-        <ResponsiveContainer width="100%" aspect={4/1} >
+        <ResponsiveContainer width="100%" aspect={ratio}>
             <LineChart data={data}>
             <XAxis dataKey="name" stroke='#5550bd'/>
            <YAxis stroke='#5550bd'/>

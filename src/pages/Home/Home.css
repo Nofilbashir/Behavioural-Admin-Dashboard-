@@ -4,3 +4,8 @@
 .homeWidgets{
     display: flex;
 }
+
+.graph_container{
+    display: flex;
+    
+}

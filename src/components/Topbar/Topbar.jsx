@@ -7,7 +7,7 @@ const Topbar = () => {
     <div className="topbarWrapper">
         <div className="topbarLeft">
             <span className='logo'>
-                NOFIL BASHIR
+                Impact Dashboard
             </span>
         </div>
         <div className="topbarRight">

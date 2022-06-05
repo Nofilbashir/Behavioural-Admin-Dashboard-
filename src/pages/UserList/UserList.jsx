@@ -51,19 +51,6 @@ const UserList = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
     <div className='UserList'>
         <DataGrid
