@@ -23,7 +23,7 @@ const User = () => {
         <button className="UserAddButton">Create</button>
         </Link>
       </div>
-      <div className="UserContainer">
+      <div className="UserContainer ">
         <div className="UserShow">
           <div className="UserShowTop">
               <img className='UserShowImg' src="https://www.whatsappimages.in/wp-content/uploads/2020/05/Stylish-Boys-Whatsapp-DP-10-1024x950.jpg" alt="" />

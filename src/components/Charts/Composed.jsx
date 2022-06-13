@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
-import './Composed.css'
-import {BookingData} from '../../Data'
+import './Composed.css';
 import {
   ComposedChart,
   Line,
@@ -19,16 +18,16 @@ import {
 
 export default class Example extends PureComponent {
   static demoUrl = 'https://codesandbox.io/s/simple-composed-chart-h9zif';
-
   render() {
     return (
+
         <div className='composed'>
             <span className='composed_Title'>Booking Trend Analysis</span>
       <ResponsiveContainer width="100%" aspect={2/1} >
         <ComposedChart
           width={500}
           height={400}
-          data={BookingData}
+          data={this.props.data}
           margin={{
             top: 20,
             right: 20,

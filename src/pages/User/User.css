@@ -1,6 +1,7 @@
 .User{
     flex: 4;
     padding: 1.4rem;
+
 }
 
 .UserTitleContainer{
@@ -27,6 +28,7 @@
 
 .UserContainer{
     display: flex;
+    flex-wrap:wrap;
 }
 
 .UserShow{
