@@ -1,15 +1,37 @@
-import React from 'react'
+import React, { useState ,useEffect} from 'react';
+import { useStateContext } from '../contexts/ContextProvider';
 import {NotificationsNone, Settings, Language} from '@mui/icons-material';
+import { AiOutlineMenu } from 'react-icons/ai';
 import './Topbar.css'
 const Topbar = () => {
+    const {activeMenu,setActiveMenu,screenSize, setScreenSize}= useStateContext();
+   
+
+
+    useEffect(() => {
+
+        const handleResize = () => setScreenSize(window.innerWidth);
+    
+        window.addEventListener('resize', handleResize);
+    
+        handleResize();
+    
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+    useEffect(() => {
+        if (screenSize <= 900) {
+          setActiveMenu(false);
+        } else {
+          setActiveMenu(true);
+        }
+      }, [screenSize]);
+
+
+    const handleActiveMenu = () => setActiveMenu(!activeMenu);
   return (
 <div className="topbar">
     <div className="topbarWrapper">
-        <div className="topbarLeft">
-            <span className='logo'>
-                Impact Dashboard
-            </span>
-        </div>
+    <button onClick={handleActiveMenu} className="btn"><AiOutlineMenu /></button>
         <div className="topbarRight">
             <div className="topbarIconscontainer">
             <NotificationsNone/>
@@ -33,3 +55,4 @@ const Topbar = () => {
 }
 
 export default Topbar
+

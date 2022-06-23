@@ -1,17 +1,49 @@
 import React from 'react'
-import './Sidebar.css'
+import './Sidebar.css';
+import { MdOutlineClose } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useStateContext } from '../contexts/ContextProvider';
 import {LineStyle, Analytics, TrendingUp, AccountCircle, Category, Assessment, Email, Feedback, Chat, WorkOutline, Report} from '@mui/icons-material';
 
 const Sidebar = () => {
+
+    var url=window.location.href
+    var url_route = url.substring(url.lastIndexOf('/')+1);
+    const [selected, setSelected] = useState(url_route)
+    const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+
+
+    const handleCloseSideBar = () => {
+        if (activeMenu !== undefined && screenSize <= 900) {
+          setActiveMenu(false);
+        }
+      };
+
+
   return (
-    <div className='sidebar'>
+    <>
+  
+    {activeMenu && (
+        <div className='sidebar'>
         <div className="sidebarWrapper">
             <div className="sidebarMenu">
+            <div className="topbarLeft">
+            <span className='logo'>
+                Impact Dashboard
+            </span>
+            <button
+                type="button"
+                onClick={() => setActiveMenu(!activeMenu)}
+                className="cancel-btn btn"
+              >
+                <MdOutlineClose />
+              </button>
+        </div>
                 <div className="sidebarTitle">Dashboard</div>
                 <ul className="sidebarlist">
                     <Link to='/' className='Link'> 
-                    <li className="listitem active">
+                    <li onClick={()=>setSelected('')} className={selected===''? 'active listitem': 'listitem' }>
                         <LineStyle className='sidebarIcon'/>
                         Home
                     </li>
@@ -33,13 +65,13 @@ const Sidebar = () => {
                 <div className="sidebarTitle">Quick Menu</div>
                 <ul className="sidebarlist">
                     <Link to='/user'  className='Link'>
-                    <li className="listitem">
+                    <li  onClick={()=>setSelected('user')} className={selected==='user'? 'active listitem': 'listitem' }>
                         <AccountCircle className='sidebarIcon'/>
                         Users
                     </li>
                     </Link>
                     <Link to='/products'  className='Link'>
-                    <li className="listitem">
+                    <li onClick={()=>setSelected('products')} className={selected==='products'? 'active listitem': 'listitem' }>
                         <Category className='sidebarIcon'/>
                         Products
                     </li>
@@ -94,7 +126,11 @@ const Sidebar = () => {
 
 
         </div>
-    </div>
+        </div>
+        )
+}
+</>
+
   )
 }
 

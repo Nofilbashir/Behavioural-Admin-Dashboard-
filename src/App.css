@@ -2,3 +2,23 @@
     display: flex;
     margin-top: 0.7rem;
 }
+*{
+    box-sizing: border-box;
+}
+.data__btn{
+    position :fixed;
+    bottom:1rem;
+    right:1rem;
+    color:White;
+    background-color: #e12121;
+    border: none;
+    outline:none;
+    border-radius: 2rem;;
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
+}
+.data__btn:hover{
+    background:White;
+    border:1px solid #e12121;
+    color:#e12121
+}

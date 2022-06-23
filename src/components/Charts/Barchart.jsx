@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import {BookingHoursData} from '../../Data'
+
 
 export default class Example extends PureComponent {
   static demoUrl = 'https://codesandbox.io/s/tiny-bar-chart-35meb';
@@ -12,7 +12,7 @@ export default class Example extends PureComponent {
 
       <ResponsiveContainer width="100%" aspect={2/1}>
           
-        <BarChart width={150} height={40} data={BookingHoursData} >
+        <BarChart width={150} height={40} data={this.props.data} >
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip/>

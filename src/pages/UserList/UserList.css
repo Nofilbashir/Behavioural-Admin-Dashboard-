@@ -1,5 +1,7 @@
-.UserList
-{flex: 4;}
+.UserList{
+    flex: 4;
+    height:85vh;
+}
 
 
 .UserListUSer{
