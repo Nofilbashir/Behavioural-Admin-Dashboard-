@@ -1,13 +1,14 @@
  .sidebar{
-     
+    
      background-color: rgb(251,251,255);
      height: calc(100vh - 60px);
      position: sticky;
+     z-index: 1;
      top: 50px;
 
  }
  .sidebarWrapper{
-    width:19rem;
+    width: 15rem;
      padding: 1.3rem;
      color: #555;
  }
@@ -60,4 +61,19 @@
     align-items: center;
     padding: .3rem;
    
+
  }
+
+ @media only screen and (max-width:600px) {
+
+    .sidebar{
+        width: 60vw;
+        background-color: rgb(251,251,255);
+        height: 100%;
+        position: sticky;
+        top: 50px;
+   
+    }
+
+   
+}

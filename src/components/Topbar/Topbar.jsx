@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from 'react';
+import React, {useEffect} from 'react';
 import { useStateContext } from '../contexts/ContextProvider';
 import {NotificationsNone, Settings, Language} from '@mui/icons-material';
 import { AiOutlineMenu } from 'react-icons/ai';
@@ -17,14 +17,14 @@ const Topbar = () => {
         handleResize();
     
         return () => window.removeEventListener('resize', handleResize);
-      }, []);
+      }, [setScreenSize]);
     useEffect(() => {
         if (screenSize <= 900) {
           setActiveMenu(false);
         } else {
           setActiveMenu(true);
         }
-      }, [screenSize]);
+      }, [setActiveMenu , screenSize]);
 
 
     const handleActiveMenu = () => setActiveMenu(!activeMenu);

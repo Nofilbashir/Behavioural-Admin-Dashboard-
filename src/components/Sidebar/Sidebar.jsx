@@ -11,14 +11,14 @@ const Sidebar = () => {
     var url=window.location.href
     var url_route = url.substring(url.lastIndexOf('/')+1);
     const [selected, setSelected] = useState(url_route)
-    const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+    const { activeMenu, setActiveMenu   } = useStateContext();
 
 
-    const handleCloseSideBar = () => {
-        if (activeMenu !== undefined && screenSize <= 900) {
-          setActiveMenu(false);
-        }
-      };
+    // const handleCloseSideBar = () => {
+    //     if (activeMenu !== undefined && screenSize <= 900) {
+    //       setActiveMenu(false);
+    //     }
+    //   };
 
 
   return (
