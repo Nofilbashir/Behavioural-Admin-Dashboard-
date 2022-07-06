@@ -168,7 +168,7 @@ const Salesdata = [
     {
       name: 'January',
       Bookings: 790,
-      BookingHours: 300,
+      BookingHours: 1300,
       Trend: 1900,
       Average: 690,
     },
@@ -181,16 +181,16 @@ const Salesdata = [
     },
     {
       name: 'March',
-      Bookings:21397,
-      BookingHours: 2098,
-      Trend: 889,
+      Bookings:1397,
+      BookingHours: 1998,
+      Trend: 2289,
       Average: 550,
     },
     {
       name: 'April',
-      Bookings: 7480,
-      BookingHours: 4200,
-      Trend: 31228,
+      Bookings: 3480,
+      BookingHours: 3200,
+      Trend: 3228,
       Average: 780,
     },
     {
@@ -202,13 +202,17 @@ const Salesdata = [
     },
     {
       name: 'June',
-      Bookings: 3400,
-      BookingHours: 880,
-      Trend: 3700,
+      Bookings: 2400,
+      BookingHours: 1880,
+      Trend: 2200,
       Average: 580,
     },
   ];
   
+
+  export const RevenueData2 ={title: 'Revenue', money:'$ 4,985' ,rate:'+10.1'} 
+  export const SalesData2 ={title: 'Sales', money:'$ 7,231' ,rate:'+6.2'} 
+  export const CostData2 ={title: 'Cost', money:'$ 2,750' ,rate:'-1.9'} 
  
 
   export const ProductRows = [

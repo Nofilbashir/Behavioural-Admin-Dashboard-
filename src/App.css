@@ -7,19 +7,16 @@
 }
 .data__btn{
     position :fixed;
-    bottom:1rem;
-    right:1rem;
-    color:White;
-    background-color: #e12121;
-    border: none;
-    outline:none;
-    border-radius: 2rem;;
-    padding: 1rem 1rem;
-    font-size: 1.3rem;
+    bottom:2rem;
+    right:2rem;
+    color:black;
+    padding:1rem 1.5rem;
+    background-color:#E0B0FF;
+   border-radius: 2rem;
+   border:1px solid #E0B0FF;
 }
 .data__btn:hover{
-    background:White;
-    border:1px solid #e12121;
-    color:#e12121
+    background-color: rgba(224,176,255,0.4);
+color: black;
 }
 

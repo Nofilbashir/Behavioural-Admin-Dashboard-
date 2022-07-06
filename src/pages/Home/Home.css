@@ -3,29 +3,47 @@
 }
 .homeWidgets{
     display: flex;
-    flex-wrap:wrap;
+    width: 100%;
+    /* flex-wrap:wrap; */
+
 }
 
 .graph_container{
     display: flex;
     flex-wrap:wrap;
+
 }
 .graph__Container__eachGraph{
     width:50%;
 }
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
     .graph__Container__eachGraph{
         width:100%;
     }
-}
-@media only screen and (max-width: 900px) {
+} */
+@media only screen and (max-width: 1000px) {
     .graph__Container__eachGraph{
-        width:70%;
+        width:100vw;
     }
+    .graph_container{
+        display: flex;
+        flex-wrap:wrap;
+        width: 100vw;
+    
+    }
+    .homeWidgets{
+        display: flex;
+        width: 100%;
+        flex-wrap:nowrap;
+        flex-direction: column;
+    }
+
+    
+    
 }
-@media only screen and (max-width: 1080px) {
+/* @media only screen and (max-width: 1080px) {
     .graph__Container__eachGraph{
         width:100%;
     }
-}
+} */
 

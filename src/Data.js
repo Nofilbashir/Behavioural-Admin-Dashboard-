@@ -343,4 +343,72 @@ const Salesdata = [
       fill: '#ffc658',
     },
   ];
+
+  export const RevenueData1 ={title: 'Revenue', money:'$ 3,455' ,rate:'+11.4'} 
+  export const SalesData1 ={title: 'Sales', money:'$ 9,415' ,rate:'+4.5'} 
+  export const CostData1 ={title: 'Cost', money:'$ 1,430' ,rate:'-2.4'} 
+
   
+
+  export const largeWidgetData =[{
+     img: require('../src/assets/user1.jpeg'),
+     name: "Patricia Dave",
+     date: '9 June 2021',
+     amount: '$ 1,211',
+     status: 'Approved'
+  },
+  {
+    img: require('../src/assets/user2.jpeg'),
+    name: "Wade Jhon",
+    date: '7 June 2021',
+    amount: '$ 2,312',
+    status: 'Approved'
+ },
+ {
+  img: require('../src/assets/user3.jpeg'),
+  name: "Robert David",
+  date: '6 June 2021',
+  amount: '$ 1,782',
+  status: 'Declined'
+},
+{
+  img: require('../src/assets/user4.jpeg'),
+  name: "William Spark",
+  date: '5 June 2021',
+  amount: '$ 6,653',
+  status: 'Approved'
+},
+{
+  img: require('../src/assets/user5.jpeg'),
+  name: "Jessica Thomas",
+  date: '2 June 2021',
+  amount: '$ 2,091',
+  status: 'Declined'
+}
+]
+
+
+
+export const SmallWidgetData =[{
+  img: require('../src/assets/small1.jpeg'),
+  name: "Donald Steve",
+  title:'SwipeWire Company'
+},
+{
+  img: require('../src/assets/small2.jpeg'),
+  name: "Brian Steven",
+  title:'Dwellsmith'
+},{
+  img: require('../src/assets/small3.jpeg'),
+  name: "Paul George",
+  title:'Formonix'
+},{
+  img: require('../src/assets/small4.jpeg'),
+  name: "Andrew Ronald",
+  title:'Cloudrevel'
+},{
+  img: require('../src/assets/small5.jpeg'),
+  name: "Joshua Kevin",
+  title:'Hiphonic Corp'
+},
+]
